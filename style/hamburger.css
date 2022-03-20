@@ -22,12 +22,22 @@
     display: flex;
     align-items: center;
     position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 26px;
+    top: 6px;
+    left: 35px;
+    width: 30px;
     height: 26px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 2080;
+}
+
+.name-burger {
+margin-top: 50px;
+font-family: "Montserrat Alternates", sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 15px;
+color: #FFFFFF;
 }
 
 .menu__btn > span,
@@ -36,10 +46,12 @@
     display: block;
     position: absolute;
     width: 100%;
-    height: 2px;
-    background-color: #616161;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #65906C;
     transition-duration: .25s;
 }
+
 .menu__btn > span::before {
     content: '';
     top: -8px;
@@ -63,6 +75,7 @@
     background-color: #ECEFF1;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
     transition-duration: .25s;
+    z-index: 2070;
 }
 
 .menu__item {
@@ -76,5 +89,5 @@
     transition-duration: .25s;
 }
 .menu__item:hover {
-    background-color: #CFD8DC;
+    background-color: #65906C;
 }
